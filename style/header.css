@@ -17,6 +17,7 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .menu__contain ul {
@@ -39,7 +40,7 @@ header {
     align-items: center;
     transition: .5s ease;
     border-radius: 5px;
-    padding: 0 10px;
+    padding: 0 15px;
     justify-content: center;
     cursor: pointer;
 }
