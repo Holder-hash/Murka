@@ -10,3 +10,107 @@ header {
     background-position-x: center;
     background-repeat: no-repeat;
 }
+
+.menu__contain {
+    width: 95%;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu__contain ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: inherit;
+    width: 100%;
+}
+
+.menu__contain li {
+    font-size: 20px;
+    font-family: 'Besley', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+    font-weight: 500;
+    height: inherit;
+    color: rgb(254, 216, 255);
+    display: flex;
+    align-items: center;
+    transition: .5s ease;
+    border-radius: 5px;
+    padding: 0 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu__contain li:not(:first-child):hover {
+    background-color: rgba(203, 0, 253, 0.336);
+    cursor: pointer;
+}
+
+.tool-bar {
+    width: 300px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.tool-bar___discord-icon {
+    width: 40px;
+    height: 30px;
+}
+
+.discord-icon___box {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: .5s ease;
+}
+.discord-icon___box:hover {
+    background-color: rgba(113, 3, 141, 0.767);
+    cursor: pointer;
+}
+
+.tool-bar p{
+    font-family: 'Besley', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+    color: rgb(254, 216, 255);
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.tool-bar___login-box {
+    display: flex;
+    align-items: center;
+    color: rgb(254, 216, 255);
+    height: inherit;
+    transition: .5s ease;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.tool-bar___login-box:hover {
+    background-color: rgba(113, 3, 141, 0.767);
+    cursor: pointer;
+}
+
+.tool-language-box {
+    color: rgb(254, 216, 255);
+    border-left: 1px solid rgba(199, 0, 156, 0.301);
+    width: 100px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    border-radius: 5px;
+}
+.tool-language-box:hover {
+    background-color: rgba(113, 3, 141, 0.767);
+    cursor: pointer;
+}
