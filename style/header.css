@@ -118,17 +118,17 @@ header {
 /* header-main-box */
 
 .header-main-box {
-    width: 700px;
-    height: 300px;
-    margin: 50px auto;
+    width: 850px;
+    height: 400px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .header-main-box img {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
 }
 
 .header-main-box h1 {
@@ -146,7 +146,34 @@ header {
 }
 
 .header-main-box___text-box {
+    width: 530px; /*промежуток кнопок*/
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: flex-end;
+}
+
+/* Header main box BUTTONS */
+
+.header-main-box___buttons-box {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-main-box___add-ds-button {
+    height: 50px;
+    width: 200px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.header-main-box___more-button {
+    height: 50px;
+    width: 150px;
+    align-self: flex-start;
+    margin-top: 10px;
 }
