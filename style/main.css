@@ -1,7 +1,10 @@
 main{
     min-height: 100%;
+    max-width: 1170px;
+    width: 100%;
 }
 
 .main_contain{
-    height: 1500px;
+    height: 3000px;
+    border: solid 3px black;
 }
