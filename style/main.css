@@ -42,6 +42,7 @@ main {
     font-family: 'Besley', serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Unbounded', cursive;
+    color: black;
 }
 
 .sub-block-description {
@@ -52,4 +53,11 @@ main {
     font-family: 'Besley', serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Unbounded', cursive;
+    color: black;
+}
+
+/*dark mode text*/
+
+.dark-mode-text {
+    color:white
 }

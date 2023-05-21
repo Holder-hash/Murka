@@ -15,3 +15,7 @@ footer {
     background-position-x: center;
     background-repeat: no-repeat;
 }
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
