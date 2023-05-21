@@ -8,7 +8,6 @@ main {
 .main_contain {
     height: 3000px;
     width: 100%;
-    border: solid 3px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,8 +17,7 @@ main {
 .count-info {
     width: 100%;
     height: 300px;
-    border: solid 1px black;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +26,30 @@ main {
 .bigger {
     width: 70%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.233);
 }
 
 .smaller {
-    background-color: rgba(0, 0, 255, 0.247);
     width: 30%;
     height: 100%;
+}
+
+/*Текст карточек*/
+
+.sub-block-header {
+    font-size: 2em;
+    font-weight: 400;
+
+    font-family: 'Besley', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+}
+
+.sub-block-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+
+    font-family: 'Besley', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
 }
