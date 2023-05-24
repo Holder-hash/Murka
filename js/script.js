@@ -1,8 +1,8 @@
 function darkMode() {
     const body = document.body;
     const wrapper = document.querySelector('.wrapper');
-    const subBlockHeader = document.querySelectorAll('.sub-block-header');
-    const subBlockDescription = document.querySelectorAll('.sub-block-description');
+    const subBlockHeader = document.querySelector('.sub-block-header');
+    const subBlockDescription = document.querySelector('.sub-block-description');
     const wasDarkMode = localStorage.getItem('darkMode') === 'true';
 
 
