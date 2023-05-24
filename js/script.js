@@ -32,6 +32,24 @@ document.querySelector('.theme-btn').addEventListener('click', darkMode)
 
 function onload() {
     document.body.classList.toggle('dark-mode', localStorage.getItem('darkMode') === 'true')
+    document.querySelector('.wrapper').classList.toggle('dark-mode', localStorage.getItem('darkMode') === 'true')
+
+    document.querySelectorAll('.sub-block-header').forEach(header => {
+        header.classList.toggle('dark-mode-text', localStorage.getItem('darkMode') === 'true')   
+    });
+
+    document.querySelectorAll('.sub-block-description').forEach(description => {
+        description.classList.toggle('dark-mode-text', localStorage.getItem('darkMode') === 'true')   
+    });
+
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.querySelector('.theme-btn').textContent = 'wb_sunny'
+        document.querySelector('.theme-btn').style = 'color: white'
+    }
+    else {
+        document.querySelector('.theme-btn').textContent = 'dark_mode'
+        document.querySelector('.theme-btn').style = 'color: black'
+    }
 }
 
 document.addEventListener('DOMContentLoaded', onload)
