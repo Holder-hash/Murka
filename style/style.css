@@ -88,3 +88,16 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(175, 102, 182);
   }
 }
+
+
+/* change page */
+
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .2s ease;
+}
