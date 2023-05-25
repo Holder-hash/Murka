@@ -29,9 +29,12 @@ footer {
     border-radius: 50%;
 }
 .material-symbols-outlined:hover {
-    background-color: #ff82e070;
-    
+    background-color: #ff82e070;  
 }
+.material-symbols-outlined:active {
+    background-color: #ff82e0c0;  
+}
+
 .countenier_footer{
     max-width: 1900px;
     width: 100%;
