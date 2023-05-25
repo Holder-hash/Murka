@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 footer {
     width: 100%;
-    height: 850px;
+    height: 900px;
 
     position: relative;
     left: 0;
     bottom: 0;
+    color: white;
 }
 
 .footer_img {
@@ -14,8 +18,91 @@ footer {
     background-position: bottom;
     background-position-x: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
 }
 
 .material-symbols-outlined {
     cursor: pointer;
+}
+
+.countenier_footer{
+    max-width: 1900px;
+    width: 100%;
+    height: 350px;
+    border: solid 1px black;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.count-ft{
+    height: 175px;
+    width: 90%;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+}
+.countenier_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main-box___add-ds-button{
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #ff82e0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.footer-main-box___add-ds-button:hover{
+    background-color: rgb(255, 167, 233)
+}
+.footer_btn_and_txt{
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+
+}
+
+.foot_element_box{
+    height: inherit;
+    width: 10%;
+    border: solid 1px black;
+}
+
+.avatar_title{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar_foot{
+    width: 100px;
+    height: 100px;
+    background-image: url(../media/logolo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title_foot{
+    font-family: 'Besley', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+.thems_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

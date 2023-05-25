@@ -48,6 +48,7 @@ main {
 .smaller img {
     width: 100%;
     height: inherit;
+    size: cover;
 }
 
 /*Текст карточек*/
