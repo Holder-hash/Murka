@@ -226,4 +226,6 @@ header {
     opacity: 0;
     transition: .3s ease;
 }
-
+.tool-language-box-item span {
+    pointer-events: none;
+}

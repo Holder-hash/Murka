@@ -15,7 +15,3 @@ function modalHidden(e) {
 languageToolBarBtn.addEventListener('click', modalShow)
 
 document.addEventListener('click', modalHidden)
-
-document.querySelectorAll('.tool-language-box-item').forEach(langBoxItem => {
-    langBoxItem.addEventListener('click', modalShow)
-})
