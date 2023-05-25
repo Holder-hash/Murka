@@ -23,6 +23,15 @@ main {
     align-items: center;
 }
 
+.sub-block {
+    opacity: 0;
+}
+
+.sub-block.element-show {
+    opacity: 1;
+    transition: 1.5s ease;
+}
+
 .bigger {
     width: 70%;
     height: 100%;

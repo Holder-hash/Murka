@@ -13,7 +13,6 @@ function darkMode() {
         description.classList.toggle('dark-mode-text', !wasDarkMode)   
     });
 
-
     localStorage.setItem('darkMode', !wasDarkMode)
     body.classList.toggle('dark-mode', !wasDarkMode)
     wrapper.classList.toggle('dark-mode', !wasDarkMode)
@@ -26,6 +25,7 @@ function darkMode() {
         document.querySelector('.theme-btn').textContent = 'dark_mode'
         document.querySelector('.theme-btn').style = 'color: black'
     }
+
 }
 
 document.querySelector('.theme-btn').addEventListener('click', darkMode)
