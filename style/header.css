@@ -211,3 +211,19 @@ header {
 .header-main-box___more-button:hover{
     background-color: #e2e2e2;
 }
+
+
+/* language modal */
+
+
+.language-box {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .3s ease;
+}
+
