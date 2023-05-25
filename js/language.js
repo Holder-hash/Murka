@@ -1,13 +1,21 @@
 const languageBox = document.querySelector('.language-box');
 const languageToolBarBtn = document.querySelector('.tool-language-box');
 
-languageToolBarBtn.addEventListener('click', () => {
+function modalShow() {
     languageBox.style.opacity = '1';
-})
+}
 
-document.addEventListener('click', (e) => {
+function modalHidden(e) {
     const hidden = e.composedPath().includes(languageBox);
     if (!hidden && e.target != languageToolBarBtn) {
         languageBox.style.opacity = '0';
     }
+}
+
+languageToolBarBtn.addEventListener('click', modalShow)
+
+document.addEventListener('click', modalHidden)
+
+document.querySelectorAll('.tool-language-box-item').forEach(langBoxItem => {
+    langBoxItem.addEventListener('click', modalShow)
 })
