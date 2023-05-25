@@ -6,6 +6,7 @@ $("#moreBtn").click(function() {
  });
 
 
+ //кнопка скролл наверх страницы
  const btnUp = {
   el: document.querySelector('.btn-up'),
   scrolling: false,
