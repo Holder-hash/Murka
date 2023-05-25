@@ -19,11 +19,11 @@ function darkMode() {
 
     if (!wasDarkMode) {
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
-        document.querySelector('.theme-btn').style = 'color: white'
+        // document.querySelector('.theme-btn').style = 'color: white'
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode'
-        document.querySelector('.theme-btn').style = 'color: black'
+        // document.querySelector('.theme-btn').style = 'color: black'
     }
 
 }
@@ -44,11 +44,11 @@ function onload() {
 
     if (localStorage.getItem('darkMode') === 'true') {
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
-        document.querySelector('.theme-btn').style = 'color: white'
+        // document.querySelector('.theme-btn').style = 'color: white'
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode'
-        document.querySelector('.theme-btn').style = 'color: black'
+        // document.querySelector('.theme-btn').style = 'color: black'
     }
 }
 
