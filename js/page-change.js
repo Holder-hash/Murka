@@ -48,7 +48,7 @@ function documentationPage() {
     isMain = false;
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
-    main.style = 'opacity: 0';
+    main.style = `opacity: 0; `;
     headerImg.style = 'background-image: none';
     header.style = `
     background-color: #fd78dc;
@@ -151,8 +151,8 @@ function supportUsPage() {
     setTimeout("loading.style = 'opacity: 0';", 400);
 }
 
-document.querySelector('#page-main').addEventListener('click', mainPage)
-document.querySelector('#page-documentation').addEventListener('click', documentationPage)
-document.querySelector('#page-commands').addEventListener('click', commandsPage)
-document.querySelector('#page-statistic').addEventListener('click', statisticPage)
-document.querySelector('#page-supportUs').addEventListener('click', supportUsPage)
+document.querySelector('#page-main').addEventListener('click', mainPage);
+document.querySelector('#page-documentation').addEventListener('click', documentationPage);
+document.querySelector('#page-commands').addEventListener('click', commandsPage);
+document.querySelector('#page-statistic').addEventListener('click', statisticPage);
+document.querySelector('#page-supportUs').addEventListener('click', supportUsPage);
