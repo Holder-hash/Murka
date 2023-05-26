@@ -25,7 +25,14 @@ function mainPage() {
     headerImg.style = `background-image: url('../media/header_img.png')`
     headerImg.style = 'background-position-x: center';
     headerImg.style = 'background-repeat: no-repeat;';
-    header.style = 'height: 760px;'
+    header.style = 'height: 760px;';
+
+    footer.style = `height: 900px;`;
+    document.querySelector('.countenier_btn').style = 'display: flex';
+    document.querySelector('.countenier_footer').style = 'height: 350px;';
+    footerImg.style = `background-image: url('../media/footer_img.png')`
+    footerImg.style = 'background-position-x: center';
+    footerImg.style = 'background-repeat: no-repeat;';
 
     documentationContent.style = 'opacity: 0';
 
