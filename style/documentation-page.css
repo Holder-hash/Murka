@@ -1,5 +1,6 @@
 .documentation-content {
     opacity: 0;
+    display: none;
 }
 .s {
     width: 500px;
