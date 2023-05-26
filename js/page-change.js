@@ -50,7 +50,7 @@ function documentationPage() {
     statisticContent.style = `opacity: 0; display: none;`;
     supportUsContent.style = `opacity: 0; display: none;`;
 
-    documentationContent.style = 'opacity: 1';
+    documentationContent.style = `opacity: 1; display: block;`;
 
     setTimeout("loading.style = 'opacity: 0';", 400);
 }
