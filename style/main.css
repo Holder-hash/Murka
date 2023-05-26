@@ -3,7 +3,7 @@ main {
     min-height: 100%;
     max-width: 1170px;
     width: 100%;
-    transition: .5s ease;
+    transition: .2s ease;
 }
 
 .main_contain {
