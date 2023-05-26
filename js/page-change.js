@@ -4,6 +4,9 @@ const header = document.querySelector('header');
 const main = document.querySelector('main');
 const loading = document.querySelector('.loading');
 
+const footer = document.querySelector('footer');
+const footerImg = document.querySelector('.footer_img');
+
 const documentationContent = document.querySelector('.documentation-content');
 const commandsContent = document.querySelector('.commands-content');
 const statisticContent = document.querySelector('.statistic-content');
@@ -16,7 +19,7 @@ var isMain = true;
 function mainPage() {
     isMain = true;
  
-    headerMainBox.style = 'opacity: 1'
+    headerMainBox.style = `opacity: 1; display: block`;
     main.style = 'display: block'
     main.style = 'opacity: 1';
     headerImg.style = `background-image: url('../media/header_img.png')`
@@ -37,7 +40,7 @@ function mainPage() {
 function documentationPage() {
     isMain = false;
     loading.style = 'opacity: 1';
-    headerMainBox.style = 'opacity: 0';
+    headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
     headerImg.style = 'background-image: none';
     header.style = `
@@ -45,6 +48,11 @@ function documentationPage() {
     height: 75px;
     `;
     setTimeout("main.style = 'display: none'", 500);
+
+    footer.style = `height: 175px;`;
+    footerImg.style = `background-image: none; background-color: #fd78dc;`;
+    document.querySelector('.countenier_btn').style = 'display:none'
+    document.querySelector('.countenier_footer').style = 'height:175px;'
 
     commandsContent.style = `opacity: 0; display: none;`;
     statisticContent.style = `opacity: 0; display: none;`;
@@ -59,7 +67,7 @@ function documentationPage() {
 function commandsPage() {
     isMain = false;
     loading.style = 'opacity: 1';
-    headerMainBox.style = 'opacity: 0';
+    headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
     setTimeout("main.style = 'display: none'", 500);
     headerImg.style = 'background-image: none';
@@ -67,6 +75,11 @@ function commandsPage() {
     background-color: #fd78dc;
     height: 75px;
     `;
+
+    footer.style = `height: 175px;`;
+    footerImg.style = `background-image: none; background-color: #fd78dc;`;
+    document.querySelector('.countenier_btn').style = 'display:none'
+    document.querySelector('.countenier_footer').style = 'height:175px;'
 
     documentationContent.style = `opacity: 0; display: none;`;
     statisticContent.style = `opacity: 0; display: none;`;
@@ -81,7 +94,7 @@ function commandsPage() {
 function statisticPage() {
     isMain = false;
     loading.style = 'opacity: 1';
-    headerMainBox.style = 'opacity: 0';
+    headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
     setTimeout("main.style = 'display: none'", 500);
     headerImg.style = 'background-image: none';
@@ -89,6 +102,11 @@ function statisticPage() {
     background-color: #fd78dc;
     height: 75px;
     `;
+
+    footer.style = `height: 175px;`;
+    footerImg.style = `background-image: none; background-color: #fd78dc;`;
+    document.querySelector('.countenier_btn').style = 'display:none'
+    document.querySelector('.countenier_footer').style = 'height:175px;'
 
     documentationContent.style = `opacity: 0; display: none;`;
     commandsContent.style = `opacity: 0; display: none;`;
@@ -103,7 +121,7 @@ function statisticPage() {
 function supportUsPage() {
     isMain = false;
     loading.style = 'opacity: 1';
-    headerMainBox.style = 'opacity: 0';
+    headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
     setTimeout("main.style = 'display: none'", 500);
     headerImg.style = 'background-image: none';
@@ -111,6 +129,11 @@ function supportUsPage() {
     background-color: #fd78dc;
     height: 75px;
     `;
+
+    footer.style = `height: 175px;`;
+    footerImg.style = `background-image: none; background-color: #fd78dc;`;
+    document.querySelector('.countenier_btn').style = 'display:none'
+    document.querySelector('.countenier_footer').style = 'height:175px;'
 
     documentationContent.style = `opacity: 0; display: none;`;
     commandsContent.style = `opacity: 0; display: none;`;
