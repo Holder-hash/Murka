@@ -19,8 +19,8 @@ var isMain = true;
 function mainPage() {
     isMain = true;
  
-    headerMainBox.style = `opacity: 1; display: block`;
-    main.style = 'display: block'
+    headerMainBox.style = `opacity: 1; display: flex`;
+    main.style = 'display: flex'
     main.style = 'opacity: 1';
     headerImg.style = `background-image: url('../media/header_img.png')`
     headerImg.style = 'background-position-x: center';
