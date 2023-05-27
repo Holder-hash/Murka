@@ -12,7 +12,6 @@ const commandsContent = document.querySelector('.commands-content');
 const statisticContent = document.querySelector('.statistic-content');
 const supportUsContent = document.querySelector('.supportUs-content');
 
-
 const inMain = localStorage.getItem('inMain') === 'false';
 const inDocumentation = localStorage.getItem('inDocumentation') === 'false';
 const inCommands = localStorage.getItem('inCommands') === 'false';
@@ -32,7 +31,7 @@ function mainPage() {
     localStorage.setItem('inSupportUs', false)
 
     isMain = true;
- 
+
     headerMainBox.style = `opacity: 1; display: flex`;
     main.style = 'display: flex'
     main.style = 'opacity: 1';

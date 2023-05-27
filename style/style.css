@@ -101,3 +101,6 @@ body::-webkit-scrollbar-thumb {
   opacity: 0;
   transition: .2s ease;
 }
+.loading img {
+  width: 150px;
+}
