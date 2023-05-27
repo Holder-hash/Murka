@@ -4,6 +4,7 @@ main {
     max-width: 1170px;
     width: 100%;
     transition: .2s ease;
+    margin-bottom: 850px;
 }
 
 .main_contain {
