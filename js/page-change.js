@@ -13,10 +13,24 @@ const statisticContent = document.querySelector('.statistic-content');
 const supportUsContent = document.querySelector('.supportUs-content');
 
 
+const inMain = localStorage.getItem('inMain') === 'false';
+const inDocumentation = localStorage.getItem('inDocumentation') === 'false';
+const inCommands = localStorage.getItem('inCommands') === 'false';
+const inStatistic = localStorage.getItem('inStatistic') === 'false';
+const inSupportUs = localStorage.getItem('inSupportUs') === 'false';
+
+
 // ГЛАВНАЯ
 var isMain = true;
 
 function mainPage() {
+
+    localStorage.setItem('inMain', true)
+    localStorage.setItem('inDocumentation', false)
+    localStorage.setItem('inCommands', false)
+    localStorage.setItem('inStatistic', false)
+    localStorage.setItem('inSupportUs', false)
+
     isMain = true;
  
     headerMainBox.style = `opacity: 1; display: flex`;
@@ -45,7 +59,15 @@ function mainPage() {
 
 // ДОКУМЕНТАЦИЯ
 function documentationPage() {
+
+    localStorage.setItem('inMain', false)
+    localStorage.setItem('inDocumentation', true)
+    localStorage.setItem('inCommands', false)
+    localStorage.setItem('inStatistic', false)
+    localStorage.setItem('inSupportUs', false)
+    
     isMain = false;
+
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = `opacity: 0; `;
@@ -72,7 +94,15 @@ function documentationPage() {
 
 // КОМАНДЫ
 function commandsPage() {
+
+    localStorage.setItem('inMain', false)
+    localStorage.setItem('inDocumentation', false)
+    localStorage.setItem('inCommands', true)
+    localStorage.setItem('inStatistic', false)
+    localStorage.setItem('inSupportUs', false)
+
     isMain = false;
+
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
@@ -99,7 +129,15 @@ function commandsPage() {
 
 // СТАТИСТИКА
 function statisticPage() {
+
+    localStorage.setItem('inMain', false)
+    localStorage.setItem('inDocumentation', false)
+    localStorage.setItem('inCommands', false)
+    localStorage.setItem('inStatistic', true)
+    localStorage.setItem('inSupportUs', false)
+
     isMain = false;
+
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
@@ -126,7 +164,15 @@ function statisticPage() {
 
 // ПОДДЕРЖИТЕ НАС
 function supportUsPage() {
+
+    localStorage.setItem('inMain', false)
+    localStorage.setItem('inDocumentation', false)
+    localStorage.setItem('inCommands', false)
+    localStorage.setItem('inStatistic', false)
+    localStorage.setItem('inSupportUs', true)
+
     isMain = false;
+
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
@@ -156,3 +202,23 @@ document.querySelector('#page-documentation').addEventListener('click', document
 document.querySelector('#page-commands').addEventListener('click', commandsPage);
 document.querySelector('#page-statistic').addEventListener('click', statisticPage);
 document.querySelector('#page-supportUs').addEventListener('click', supportUsPage);
+
+function starterPage() {
+    if (localStorage.getItem('inMain') === 'true') {
+        mainPage()
+    }
+    else if (localStorage.getItem('inDocumentation') === 'true') {
+        documentationPage()
+    }
+    else if (localStorage.getItem('inCommands') === 'true') {
+        commandsPage()
+    }
+    else if (localStorage.getItem('inStatistic') === 'true') {
+        statisticPage()
+    }
+    else if (localStorage.getItem('inSupportUs') === 'true') {
+        supportUsPage()
+    }
+}
+
+document.addEventListener('DOMContentLoaded', starterPage)
