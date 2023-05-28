@@ -33,8 +33,8 @@ function mainPage() {
     isMain = true;
 
     headerMainBox.style = `opacity: 1; display: flex`;
-    main.style = 'display: flex'
-    main.style = 'opacity: 1';
+    main.style = `display: flex; main.style = 'opacity: 1';`;
+
     headerImg.style = `background-image: url('../media/header_img.png')`
     headerImg.style = 'background-position-x: center';
     headerImg.style = 'background-repeat: no-repeat;';
@@ -69,13 +69,13 @@ function documentationPage() {
 
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
-    main.style = `opacity: 0; `;
+    main.style = `opacity: 0;`;
     headerImg.style = 'background-image: none';
     header.style = `
     background-color: #fd78dc;
     height: 75px;
     `;
-    setTimeout("main.style = 'display: none'", 500);
+    main.style = 'display: none';
 
     footer.style = `height: 175px;`;
     footerImg.style = `background-image: none; background-color: #fd78dc;`;
@@ -105,7 +105,7 @@ function commandsPage() {
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
-    setTimeout("main.style = 'display: none'", 500);
+    main.style = 'display: none';
     headerImg.style = 'background-image: none';
     header.style = `
     background-color: #fd78dc;
@@ -140,7 +140,7 @@ function statisticPage() {
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
-    setTimeout("main.style = 'display: none'", 500);
+    main.style = 'display: none';
     headerImg.style = 'background-image: none';
     header.style = `
     background-color: #fd78dc;
@@ -175,7 +175,7 @@ function supportUsPage() {
     loading.style = 'opacity: 1';
     headerMainBox.style = `opacity: 0; display: none`;
     main.style = 'opacity: 0';
-    setTimeout("main.style = 'display: none'", 500);
+    main.style = 'display: none';
     headerImg.style = 'background-image: none';
     header.style = `
     background-color: #fd78dc;
