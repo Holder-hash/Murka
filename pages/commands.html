@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&family=Roboto:wght@500&family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Murka - Документация</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_img">
+                <div class="menu__contain">
+
+                    <ul>
+                        <li id="pageMain" onclick="window.location.href = '../index.html';">Murka</li>
+                        <li id="pageDocumentation" onclick="window.location.href = 'documentation.html';">докумнтация</li>
+                        <li id="pageCommands">команды</li>
+                        <li id="pageStatistic" onclick="window.location.href = 'statistic.html';">статистика</li>
+                        <li id="pageSupportUs" onclick="window.location.href = 'supportUs.html';">поддержите нас</li>
+                    </ul>
+
+                    <div class="tool-bar">
+                        <div class="discord-icon___box"><img src="../media/discord-icon-white.png" alt="discord icon" class="tool-bar___discord-icon"></div>
+                        <div class="tool-bar___login-box"><p>Войти</p><span class="material-symbols-outlined">login</span></div>
+                        <div class="tool-language-box tool-language-box-item"><span class="material-symbols-outlined tool-language-box-item">translate</span>
+                            <span class="material-symbols-outlined tool-language-box-item">arrow_drop_down</span></div>
+                    </div>
+
+                </div>
+
+                <div class="language-box">
+                  <div class="language-box-contain">
+                    <div class="language-box-ru">
+                      <img src="../media/russian-icon.png" alt="russian flag">
+                      <p>Русский</p>
+                    </div>
+                    <div class="language-box-us">
+                      <img src="../media/america-icon.png" alt="USA flag">
+                      <p>English</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="header-main-box">
+                    <div class="header-main-box___logo-box">
+                        <img src="../media/logolo.png" alt="Logotype">
+                    </div>
+
+                    <div class="header-main-box___text-box">
+                        <h1>YIP-YAP 'N' MUSIC!</h1>
+                        <p>Залей музыки в свой сервер</p>
+                        <div class="header-main-box___buttons-box">
+                            <button class="header-main-box___add-ds-button"><span>ДОБАВИТЬ В DISCORD</span></button>
+                            <button class="header-main-box___more-button" id="moreBtn"><span>ПОДРОБНЕЕ</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+            <div class="footer_img">
+              <div class="countenier_footer">
+                <div class="countenier_btn count-ft">
+                  <h class="footer_btn_and_txt">…и приглашаем Вас присоединиться к нам!</h>
+                  <button class="footer-main-box___add-ds-button"><span>ДОБАВИТЬ В DISCORD</span></button>
+                </div>
+                <div class="countenier_footer_element count-ft">
+                  <div class="foot_element_box avatar_title">
+                    <div class="avatar_foot"></div>
+                    <h1 class="title_foot">MurkaBot</h1>
+                  </div>
+                  <div class="foot_element_box">
+                    <div class="social__contain">
+                      <div class="social___el">
+                        <img src="../media/discord-icon-white.png" alt="">
+                      </div>
+                      <div class="social___el">
+                        <img src="../media/discord-icon-white.png" alt="">
+                      </div>
+                      <div class="social___el">
+                        <img src="../media/discord-icon-white.png" alt="">
+                      </div>
+                      <div class="social___el">
+                        <img src="../media/discord-icon-white.png" alt="">
+                      </div>
+                      <div class="social___el">
+                        <img src="../media/discord-icon-white.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="foot_element_box footer-menu">
+                    <ul>
+                      <li>Сервер поддержки</li>
+                      <li>Документация</li>
+                      <li>Команды</li>
+                      <li>Обратная связь</li>
+                    </ul>
+                  </div>
+                  <div class="foot_element_box footer-menu">
+                    <ul>
+                      <li>Условия использования</li>
+                      <li>Конфиденциальность</li>
+                      <li>Файлы Cookie</li>
+                    </ul>
+                  </div>
+                  <div class="foot_element_box footer-menu">
+                    <ul>
+                      <li>Состояние</li>
+                      <li>Пожертвования</li>
+                      <li>Powered by GalaxyGate</li>
+                    </ul>
+                  </div>
+                  <div class="foot_element_box thems_box">
+                    <span class="material-symbols-outlined theme-btn">dark_mode</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <script src="../js/jquery-3.7.0.min.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/language.js"></script>
+</body>
+</html>
