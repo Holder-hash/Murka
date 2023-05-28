@@ -79,6 +79,30 @@ header {
     cursor: pointer;
 }
 
+.hint_box{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 4px;
+    margin-bottom: -100px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.discord-icon___box:hover .hint_box{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s;
+}
+
 .tool-bar p{
     font-family: 'Besley', serif;
     font-family: 'Roboto', sans-serif;
