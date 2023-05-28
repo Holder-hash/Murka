@@ -286,3 +286,6 @@ header {
 
 /* Маленький хедер */
 
+.little-header {
+    height: 75px;
+}
