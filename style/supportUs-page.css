@@ -1,46 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
-.supportUs-content {
-    opacity: 0;
-    display: none;
-}
-
-.countenier-support{
-    display: block;
+.main_support {
+    display: flex;
     min-height: 100%;
     max-width: 1170px;
-    width: 10000px;
-    transition: .2s ease;
-    border: 1px solid black;
+    width: 100%;
 }
 
-.bonuses-for-donations-container{
+.support_countenier {
+    height: 1300px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.info-line{
-    width: 1170px;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 1px black;
-    transition: 0.25s;
-    overflow: hidden;
+.counteiner_head_text{
+    height: 300px;
+    width: 100%;
 }
 
-.line-countenier-head{
+.text-support1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.text-support2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.text-support-bonus-1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.text-support-bonus-2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.convolutions_countenier{
+    width: 100%;
+    min-height: 360px;
+}
+.convolutions{
     height: 60px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    color: rgb(29, 29, 29);
-    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 0 1px black;
 }
 
-.line-countenier-foot{
+.countenier_one_text{
+    width: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
-    color: rgb(29, 29, 29);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.countenier_two_text{
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+.text_support_convolutions{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text_support_convolutions_1{
+    display: none;
+}
+
+.donaton_countanier{
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donaton_fon{
+    width: 250px;
+    height: 75px;
+    background-color: #f86bd9;
+    border-radius: 8px;
+    box-shadow: 0 0 25px #ff9cea;
+}
+.countenier_senks h4{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: rgb(122, 122, 122);
+}
+
+.font_color_title{
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f86bd9;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.li1{
+    font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+}
+.li2{
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: rgb(90, 90, 90);
+}
+
+@media screen and (max-width: 1200px) {
+    #pageDocumentation{
+        display: none;
+    }
+    #pageCommands{
+        display: none;
+    }
+    #pageStatistic{
+        display: none;
+    }
+    #pageSupportUs{
+        display: none;
+    }
+    .main_support {
+        max-width: 600px;
+    }
+    .social_linck_none{
+        display: none;
+    }
+    .avatar_title{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .avatar_foot{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .two-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .discord-icon___box{
+        display: none;
+    }
 }
