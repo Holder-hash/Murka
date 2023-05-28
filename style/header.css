@@ -150,7 +150,8 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 .header-main-box img {
@@ -189,6 +190,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: 1px solid black;
 }
 
 .header-main-box___add-ds-button {
@@ -236,6 +238,9 @@ header {
     background-color: #e2e2e2;
 }
 
+@media screen and (max-width: 1200px) {
+
+}
 
 /* language modal */
 

@@ -81,3 +81,22 @@ main {
 .dark-mode-text {
     color:white
 }
+
+@media screen and (max-width: 1200px) {
+    #pageDocumentation{
+        display: none;
+    }
+    #pageCommands{
+        display: none;
+    }
+    #pageStatistic{
+        display: none;
+    }
+    #pageSupportUs{
+        display: none;
+    }
+    .footer-menu{
+        display: none;
+    }
+}
+
