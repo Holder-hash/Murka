@@ -107,8 +107,9 @@ input::placeholder {
 
 .expansion-panel-body {
     width: 100%;
-    height: auto;
-
+    height: 0px;
+    overflow: hidden;
+    transition: .5s ease;
 }
 
 .expansion-panel-body p {
