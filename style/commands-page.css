@@ -1,23 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
 .main_commands {
     display: flex;
-    min-height: 100%;
+    min-height: 100vh;
     max-width: 1170px;
     width: 100%;
-    border: 1px solid black;
 }
 
-.support_countenier {
-    height: 1500px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(255, 0, 0);
+.command_countenier1 {
+    flex: 0 0 30%;
+    min-height: 100vh;
 }
 
-.command_countenier2{
-    height: 1500px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(255, 0, 0);
+.command_countenier2 {
+    flex: 0 0 70%;
+    min-height: 100vh;
 }
+
+.commant_header_text{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.input_search{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 3px solid #ff00bf;
+}
+input:focus{
+    outline: none;
+}
+input{
+    font-size: 24px;
+    color: rgb(41, 41, 41);
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+}
+
+.item-selection-container{
+    width: 100%;
+    height: 360px;
+    background-color: #b6b6b6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.search_ingo_commands{
+    width: 95%;
+    height: 40px;
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+
+}
+
+input::placeholder {
+    color: red;
+    font-size: 1.2em;
+    font-style: italic;
+  }

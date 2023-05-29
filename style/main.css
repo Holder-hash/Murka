@@ -98,5 +98,50 @@ main {
     .footer-menu{
         display: none;
     }
+    .social__contain{
+        display: none;
+    }
+    .avatar_foot{
+        display: none;
+    }
+    .smaller {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-main-box{
+        display: none;
+    }
+}
+
+.theme-btn2{
+    display: none;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .header-main-box{
+        display: none;
+    }
+    .sub-block-header{
+        color: #ff59d6;
+    }
+    .footer_btn_and_txt{
+        display: none;
+    }
+    .foot_el_none{
+        display: none;
+    }
+    .thems_box{
+        display: none;
+    }
+    .theme-btn2{
+        display: flex;
+    }
+}
+
+.foot_element_box{
+    border: 1px solid black;
 }
 

@@ -39,10 +39,10 @@ line1.addEventListener('click', () =>{
         ltxt6.style.display = 'none';
     } 
     else {
-        ltxt1.style.display = 'none';
         line1.style.height = '60px';
         order1 = 0;
-        
+        time.sleep(0.5)
+        ltxt1.style.display = 'none';
     }
 });
 line2.addEventListener('click', () =>{
@@ -67,9 +67,10 @@ line2.addEventListener('click', () =>{
         order6 = 0;
     } 
     else {
-        ltxt2.style.display = 'none';
         line2.style.height = '60px';
         order2 = 0;
+        time.sleep(0.5)
+        ltxt2.style.display = 'none';
     }
 });
 line3.addEventListener('click', () =>{
@@ -121,9 +122,10 @@ line4.addEventListener('click', () =>{
         order6 = 0;
     } 
     else {
-        ltxt4.style.display = 'none';
         line4.style.height = '60px';
         order4 = 0;
+        time.sleep(0.5)
+        ltxt4.style.display = 'none';
     }
 });
 line5.addEventListener('click', () =>{
@@ -148,9 +150,10 @@ line5.addEventListener('click', () =>{
         order6 = 0;
     } 
     else {
-        ltxt5.style.display = 'none';
         line5.style.height = '60px';
         order5 = 0;
+        time.sleep(0.5)
+        ltxt5.style.display = 'none';
     }
 });
 line6.addEventListener('click', () =>{
@@ -175,8 +178,9 @@ line6.addEventListener('click', () =>{
         order1 = 0;
     } 
     else {
-        ltxt6.style.display = 'none';
         line6.style.height = '60px';
         order6 = 0;
+        time.sleep(0.5)
+        ltxt6.style.display = 'none';
     }
 });

@@ -151,7 +151,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .header-main-box img {
@@ -182,6 +181,9 @@ header {
     align-self: flex-end;
 }
 
+.header-main-box___logo-box{
+}
+
 /* Header main box BUTTONS */
 
 .header-main-box___buttons-box {
@@ -190,7 +192,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid black;
 }
 
 .header-main-box___add-ds-button {
