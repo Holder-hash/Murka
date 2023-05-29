@@ -105,17 +105,58 @@ input::placeholder {
 
 /*тело команрд*/
 
-.expansion-panel-body {
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    transition: .5s ease;
+.content {
+	transition: max-height 0.2s;
+	overflow: hidden;
+	&[aria-hidden="true"] {
+		max-height: 0;
+	}
+	&[aria-hidden="false"] {
+		max-height: var(--containerHeight, 1000px);
+	}
 }
 
-.expansion-panel-body p {
-    margin-bottom: 10px;
+/* Everything after this is merely aesthetics */
+* {
+	box-sizing: border-box;
 }
 
-.expansion-panel-body .strong {
-    font-weight: bold;
+.container {
+	font-family: sans-serif;
+	line-height: 1.2;
+}
+
+.trigger {
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	min-height: 45px;
+	border: 2px solid #ff00bf;
+	border-radius: 20px;
+	background-color: transparent;
+	color: #212121;
+	&:focus {
+		border: 2px solid #222;
+		outline: 0;
+	}
+	[data-drawer-showing="true"] & {
+		background-color: #bdbdbd;
+		border: 2px solid transparent;
+	}
+}
+
+.container + .container {
+	margin-top: 20px;
+}
+
+.content {
+	display: flex;
+	margin: 1em;
+	line-height: 1.4;
+	max-width: 800px;
+}
+
+.trigger span {
+    margin-right: 5px;
 }
