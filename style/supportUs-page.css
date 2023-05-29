@@ -77,7 +77,7 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 85px;
+    width: auto;
     height: 25px;
     border-radius: 20px;
     background-color: #ff00c8;
@@ -85,11 +85,16 @@
     margin-right: 20px;
     letter-spacing: 1px;
     color: white;
+    padding: 3px 10px;
 }
 h4 {
     display: inline-block;
 }
 
+.countainer__arrow {
+    width: 50px;
+    border: 1px solid red;
+}
 
 
 .countenier_two_text{
