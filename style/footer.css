@@ -22,17 +22,17 @@ footer {
     justify-content: space-around;
 }
 
-.material-symbols-outlined {
+.theme-btn {
     cursor: pointer;
     transform: scale(1.2);
     transition: .2s;
     border-radius: 50%;
     color: white;
 }
-.material-symbols-outlined:hover {
+.theme-btn:hover {
     background-color: #ff82e070;  
 }
-.material-symbols-outlined:active {
+.theme-btn:active {
     background-color: #ff82e0c0;  
 }
 
