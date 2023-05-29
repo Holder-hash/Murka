@@ -16,7 +16,6 @@
 .command_countenier2 {
     flex: 0 0 70%;
     min-height: 100vh;
-    border: 1px solid black;
     margin: 120px 20px;
 }
 
@@ -109,9 +108,13 @@ input::placeholder {
 .expansion-panel-body {
     width: 100%;
     height: auto;
-    border: 1px solid black;
+
 }
 
 .expansion-panel-body p {
     margin-bottom: 10px;
+}
+
+.expansion-panel-body .strong {
+    font-weight: bold;
 }
