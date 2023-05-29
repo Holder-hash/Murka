@@ -17,6 +17,7 @@
     flex: 0 0 70%;
     min-height: 100vh;
     border: 1px solid black;
+    margin: 120px 20px;
 }
 
 .commant_header_text{
@@ -78,6 +79,39 @@ input::placeholder {
     align-items: center;
 }
 
-.searchBtn__icon-box span {
+/*команды*/
 
+.expansion-panel-header {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.expansion-panel-header-contain {
+    width: 90%;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.command {
+    background-color: #ff00bf;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 17px;
+    color: white;
+}
+
+/*тело команрд*/
+
+.expansion-panel-body {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.expansion-panel-body p {
+    margin-bottom: 10px;
 }
