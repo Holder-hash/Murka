@@ -285,7 +285,67 @@
               </div>
 
               <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
+                <button type="button" class="trigger"><span>user</span> <p> Информация об участнике</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Показывает информацию об участнике: имя, статус, даты присоединения и регистрации, аватарка и так далее.
+
+                  Использование:
+                  user [@Участник | ID]
+                  ┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+                  Примеры:
+                  user
+                  ┗ Покажет информацию об участнике, вызвавшему команду.
+                  user @Участник
+                  ┗ Покажет информацию об упомянутом участнике.
+                  user 247734710682255361
+                  ┗ Покажет информацию об участнике с указанным ID.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>bio</span> <p> Биография участника</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Позволяет посмотреть или установить какую-либо информацию о себе. Данная информация также будет отображаться по команде "user".
+
+                    Использование:
+                    bio [@Участник | ID] [текст | -]
+                    Примеры:
+                    bio
+                    ┗ Покажет текущую биографию участника.
+                    bio Я люблю печеньки!
+                    ┗ Установит указанный текст в качестве биографии.
+                    bio -
+                    ┗ Очистит биографию.
+                    bio @Участник Я люблю печеньки!
+                    ┗ Установит указанный текст в качестве биографии указанного участника.
+                    bio @Участник -
+                    ┗ Очистит биографию указанного участника.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>inviteinfo</span> <p>Информация о ссылке-приглашении</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Показывает информацию о ссылке-приглашении, включая данные о сервере аналогично команде "serverinfo" если бот есть на этом сервере.
+
+                  Использование:
+                  inviteinfo <ссылка | код>
+                  Примеры:
+                  inviteinfo https://discord.gg/EdWspu3
+                  ┗ Покажет информацию о приглашении.
+                  inviteinfo EdWspu3
+                  ┗ Покажет информацию о приглашении по его коду.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>mute</span> <p>Заглушить участника в канале или глобально по всему серверу</p> <span class="material-symbols-outlined">
                   keyboard_arrow_down
                   </span></button>
                 <div class="content">
@@ -297,7 +357,110 @@
               </div>
 
               <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
+                <button type="button" class="trigger"><span>unmute</span> <p>Снять с участника мьют (глобальный или в текущем канале)</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Снимает ограничения, накладываемые командой "mute" в текущем канале или глобально.
+
+                  Использование:
+                  unmute <@Участник | ID>
+                  ┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+                  Примеры:
+                  unmute @Участник
+                  ┗ Снимет мьют с указанного участника в текущем канале или глобально.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>mures</span> <p>Показать список активных мьютов</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Заглушает (мьютит) указанного участника в канале или по всему серверу навсегда или на указанное время.
+
+                  Использование:
+                  mute <@Участник | ID> [длительность] [everywhere | here | #Канал] [причина]
+                  ┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+                  Примеры:
+                  mute @Участник
+                  ┗ Заглушит участника перманентно в текущем текстовом канале или на всем сервере (в зависимости от режима по-умолчанию).
+                  mute @Участник 10мин here
+                  ┗ Заглушит участника в текущем текстовом канале на 10 минут.
+                  mute @Участник 10мин everywhere
+                  ┗ Заглушит участника на всем сервере на 10 минут.
+                  mute @Участник 10мин everywhere Провокатор!
+                  ┗ Заглушит участника на всем сервере на 10 минут с указанием причины.
+                  mute @Участник 10мин #Канал Провокатор!
+                  ┗ Заглушит участника в указанном текстовом канале на 10 минут.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>ban</span> <p> Изгнать участника с сервера и заблокировать</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Изгоняет указанного участника с сервера навсегда или временно и очищает его сообщения (до 7 дней).
+
+Использование:
+ban <@Участник | ID> [длительность] [дни очистки] [причина]
+┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+Примеры:
+ban @Участник
+┗ Забанит участника перманентно.
+ban @Участник ведет себя провокационно
+┗ Забанит участника перманентно с указанием причины.
+ban @Участник 7 ведет себя провокационно
+┗ Забанит участника перманентно с указанием причины и очищает его сообщения за последние 7 дней.
+ban @Участник 1д 7 ведет себя провокационно
+┗ Забанит участника на один день с указанием причины и очищает его сообщения за последние 7 дней.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>warn
+                </span> <p>  Выдать участнику предупреждение</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Выдает указанному участнику бессрочное или истекающее со временем предупреждение и применяет настроенные в панели управления наказания за нарушения.
+
+Использование:
+warn <@Участник | ID> [длительность] [причина]
+┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+Примеры:
+warn @Участник
+┗ Выдаст пустое предупреждение.
+warn @Участник ведет себя провокационно
+┗ Выдаст предупреждение с указанной причиной.
+warn @Участник 1д ведет себя провокационно
+┗ Выдаст предупреждение с причиной и со сроком действия в один день.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>warns</span> <p> Показать список активных предупреждений</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Показывает список активных предупреждений указанного участника или участника, вызвавшего команду.
+
+Команда доступна обычным участникам для просмотра своих предупреждений.
+
+Использование:
+warns [@Участник | ID]
+┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+Примеры:
+warns
+┗ Покажет список собственных предупреждений.
+warns @Участник
+┗ Покажет список предупреждений указанного участника.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>remwarn</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
                   keyboard_arrow_down
                   </span></button>
                 <div class="content">
@@ -305,6 +468,39 @@
 
                   Использование:
                   serverinfo
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>serverinfo</span> <p> Снять предупреждение участника</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Снимает с участника предупреждение по номеру случая из команды "warns".
+
+Использование:
+remwarn <номер случая>
+Примеры:
+remwarn 123
+┗ Снимет предупреждение с номером #123.
+                </div>
+              </div>
+
+              <div class="container">
+                <button type="button" class="trigger"><span>resetwarns</span> <p>Сбросить все предупреждения</p> <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                  </span></button>
+                <div class="content">
+                  Снимает все активные предупреждения с указанного участника или всех участников на сервере.
+
+                  Использование:
+                  resetwarns [@Участник | ID]
+                  ┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+                  Примеры:
+                  resetwarns
+                  ┗ Сбросит все предупреждения всех участников сервера.
+                  resetwarns @Участник
+                  ┗ Сбросит все предупреждения указанного участника.
                 </div>
               </div>
 
@@ -321,146 +517,42 @@
               </div>
 
               <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
+                <button type="button" class="trigger"><span>clear</span> <p> Очистить последние сообщения в текущем канале</p> <span class="material-symbols-outlined">
                   keyboard_arrow_down
                   </span></button>
                 <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
+                  Очистит последние сообщения в текущем канале или последние сообщения указанного участника. Имейте в виду, что бот не может удалять сообщения старше двух недель и может удалить максимум 1000 сообщений за раз.
 
-                  Использование:
-                  serverinfo
+Использование:
+clear [@Участник | ID] <количество>
+┗ Параметр участника может быть заменён на автора сообщения, в ответ на которое вызвана команда.
+Примеры:
+clear 100
+┗ Удалит последние сто сообщений в текущем канале.
+clear 10мин
+┗ Удалит сообщения в текущем канале за последние 10 минут.
+clear @Участник 100
+┗ Удалит все последние сообщения указанного участника среди ста последних сообщений в текущем канале.
+clear @Участник 10мин
+┗ Удалит все сообщения указанного участника в текущем канале за последние 10 минут.
                 </div>
               </div>
 
               <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
+                <button type="button" class="trigger"><span>slowmode</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
                   keyboard_arrow_down
                   </span></button>
                 <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
+                  Включает слоумод в текущем канале на указанное количество секунд на одно сообщение (до 6 часов).
+Введите 0 для отключения слоумода.
 
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p> Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
-                </div>
-              </div>
-
-              <div class="container">
-                <button type="button" class="trigger"><span>serverinfo</span> <p>Информация о сервере</p> <span class="material-symbols-outlined">
-                  keyboard_arrow_down
-                  </span></button>
-                <div class="content">
-                  Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.
-
-                  Использование:
-                  serverinfo
+Использование:
+slowmode <длительность>
+Примеры:
+slowmode 15сек
+┗ Включит 15-секундный слоумод в текущем канале.
+slowmode 0
+┗ Отключит слоумод в текущем канале.
                 </div>
               </div>
 
