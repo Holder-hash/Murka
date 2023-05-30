@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    color: black;
 }
 
 .input_search{
@@ -43,6 +44,10 @@ input{
     -webkit-text-fill-color: transparent;
     background: none;
 }
+.input_search::placeholder {
+    font-size: 16px;
+}
+
 .item-selection-container{
     width: 100%;
     height: 360px;
@@ -62,6 +67,7 @@ input{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 input::placeholder {

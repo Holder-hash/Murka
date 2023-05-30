@@ -20,10 +20,28 @@ function darkMode() {
     if (!wasDarkMode) {
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
         // document.querySelector('.theme-btn').style = 'color: white'
+
+        document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
+            mainCommandsHeader.style = 'color: white'   
+        })
+        document.querySelectorAll('.content').forEach(mainCommandsBody => {
+            mainCommandsBody.style = 'color: white' 
+        })
+
+        document.querySelector('.command_countenier1 h2').style = 'color: white';
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode'
         // document.querySelector('.theme-btn').style = 'color: black'
+
+        document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
+            mainCommandsHeader.style = 'color: black'   
+        })
+        document.querySelectorAll('.content').forEach(mainCommandsBody => {
+            mainCommandsBody.style = 'color: black'   
+        })
+
+        document.querySelector('.command_countenier1 h2').style = 'color: black';
     }
 
 }
@@ -42,14 +60,42 @@ function onload() {
         description.classList.toggle('dark-mode-text', localStorage.getItem('darkMode') === 'true')   
     });
 
+
+
     if (localStorage.getItem('darkMode') === 'true') {
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
         // document.querySelector('.theme-btn').style = 'color: white'
+
+        document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
+            mainCommandsHeader.style = 'color: white'   
+        })
+        document.querySelectorAll('.content').forEach(mainCommandsBody => {
+            mainCommandsBody.style = 'color: white'   
+        })
+
+        document.querySelector('.command_countenier1 h2').style = 'color: white';
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode'
         // document.querySelector('.theme-btn').style = 'color: black'
+
+        document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
+            mainCommandsHeader.style = 'color: black'   
+        })
+        document.querySelectorAll('.content').forEach(mainCommandsBody => {
+            mainCommandsBody.style = 'color: black'   
+        })
+
+        document.querySelector('.command_countenier1 h2').style = 'color: black';
     }
+
+
+
+
+    document.querySelector('.input_search').style = 'color: white';
+    document.querySelector('.input_search::placeholder').style = 'color: white';
+
+    
 }
 
 document.addEventListener('DOMContentLoaded', onload)

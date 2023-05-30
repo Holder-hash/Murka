@@ -42,6 +42,10 @@ body {
     background-color: rgb(56, 56, 56);
 }
 
+.dark-mode-text {
+  color:white
+}
+
 body::-webkit-scrollbar {
   width: 14px;
 }
