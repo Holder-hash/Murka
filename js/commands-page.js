@@ -56,5 +56,9 @@ document.querySelector('.input_search').onblur = () => {
 	if (document.querySelector('.input_search').value) {
 		document.querySelector('.search_ickon').style = 'opacity: 0';
 	}
+
+	if (localStorage.getItem('darkMode') === 'true') {
+		document.querySelector('.search_ickon').style = 'color: white';
+	}
 }
 
