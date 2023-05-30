@@ -45,3 +45,16 @@ function wireUpTriggers() {
 		});
 	});
 }
+
+
+
+document.querySelector('.input_search').onfocus = () => {
+	document.querySelector('.search_ickon').style = 'opacity: 0';
+}
+document.querySelector('.input_search').onblur = () => {
+	document.querySelector('.search_ickon').style = 'opacity: 1';
+	if (document.querySelector('.input_search').value) {
+		document.querySelector('.search_ickon').style = 'opacity: 0';
+	}
+}
+

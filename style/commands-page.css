@@ -16,7 +16,7 @@
 .command_countenier2 {
     flex: 0 0 70%;
     min-height: 100vh;
-    margin: 120px 20px;
+    margin: 100px 50px;
 }
 
 .commant_header_text{
@@ -33,19 +33,21 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #ff00bf;
-}
-input:focus{
-    outline: none;
-}
-input{
-    font-size: 24px;
-    color: rgb(41, 41, 41);
-    text-shadow: 0px 0px 0px #000;
-    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+
     background: none;
 }
-.input_search::placeholder {
+.input_search:focus{
+    outline: none;
+}
+.search_ickon {
     font-size: 16px;
+    color: black;
+    font-style: italic;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    pointer-events: none;
 }
 
 .item-selection-container{
@@ -56,7 +58,7 @@ input{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: -10px;
     border-radius: 8px;
 }
 
@@ -70,11 +72,6 @@ input{
     cursor: pointer;
 }
 
-input::placeholder {
-    color: red;
-    font-size: 1.2em;
-    font-style: italic;
-  }
 
 .search_ingo_commands_container {
     width: 90%;
