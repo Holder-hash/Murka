@@ -127,6 +127,8 @@ h4 {
     background-color: #313131;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+    user-select: none;
 }
 .donaton_fon{
     font-size: 40px;
@@ -162,6 +164,19 @@ h4 {
 }
 .convolutionsBorder2{
     border-radius: 0 0 16px 16px;
+}
+
+.subscriber-span {
+    background-color: yellow;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.donator-span {
+    background-color: rgb(172, 32, 172);
+    color: white;
+    padding: 0 5px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 1200px) {

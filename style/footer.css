@@ -28,6 +28,7 @@ footer {
     transition: .2s;
     border-radius: 50%;
     color: white;
+    user-select: none;
 }
 .theme-btn:hover {
     background-color: #ff82e070;  
@@ -93,6 +94,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 .avatar_foot{
     width: 100px;
@@ -113,6 +115,7 @@ footer {
     height: inherit;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 .social__contain img {
     width: 40px;
