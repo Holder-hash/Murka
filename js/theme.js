@@ -49,9 +49,8 @@ function darkMode() {
 
         document.querySelector('.input_search').style = 'color: black';
 
-        document.querySelector('.search_ickon').style = 'color: black';
+        document.querySelector('.search_ickon').style = 'color: black';      
     }
-
 }
 
 document.querySelector('.theme-btn').addEventListener('click', darkMode)
@@ -84,21 +83,23 @@ function onload() {
         document.querySelector('.search_ickon').style = 'color: white'; 
     }
     else {
-        document.querySelector('.theme-btn').textContent = 'dark_mode'
+        document.querySelector('.theme-btn').textContent = 'dark_mode';
         // document.querySelector('.theme-btn').style = 'color: black'
 
         document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
-            mainCommandsHeader.style = 'color: black'   
+            mainCommandsHeader.style = 'color: black';   
         })
         document.querySelectorAll('.content').forEach(mainCommandsBody => {
-            mainCommandsBody.style = 'color: black'   
+            mainCommandsBody.style = 'color: black';  
         })
 
         document.querySelector('.command_countenier1 h2').style = 'color: black';
-        document.querySelector('.input_search').style = 'color: black'
+        document.querySelector('.input_search').style = 'color: black';
 
         document.querySelector('.search_ickon').style = 'color: black';
     }  
+
+    
 }
 
-document.addEventListener('DOMContentLoaded', onload)
+document.addEventListener('DOMContentLoaded', onload);

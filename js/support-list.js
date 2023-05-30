@@ -47,7 +47,7 @@ line1.addEventListener('click', () =>{
 });
 line2.addEventListener('click', () =>{
     if(order2 === 0){
-        line2.style.height = '340px';
+        line2.style.height = '180px';
         order2 = 1;
         line1.style.height = '60px';
         line3.style.height = '60px';
@@ -75,7 +75,7 @@ line2.addEventListener('click', () =>{
 });
 line3.addEventListener('click', () =>{
     if(order3 === 0){
-        line3.style.height = '340px';
+        line3.style.height = '270px';
         order3 = 1;
         line2.style.height = '60px';
         line1.style.height = '60px';
@@ -102,7 +102,7 @@ line3.addEventListener('click', () =>{
 });
 line4.addEventListener('click', () =>{
     if(order4 === 0){
-        line4.style.height = '340px';
+        line4.style.height = '265px';
         order4 = 1;
         line2.style.height = '60px';
         line3.style.height = '60px';
@@ -130,7 +130,7 @@ line4.addEventListener('click', () =>{
 });
 line5.addEventListener('click', () =>{
     if(order5 === 0){
-        line5.style.height = '340px';
+        line5.style.height = '100px';
         order5 = 1;
         line2.style.height = '60px';
         line3.style.height = '60px';
@@ -158,7 +158,7 @@ line5.addEventListener('click', () =>{
 });
 line6.addEventListener('click', () =>{
     if(order6 === 0){
-        line6.style.height = '340px';
+        line6.style.height = '100px';
         order6 = 1;
         line2.style.height = '60px';
         line3.style.height = '60px';
