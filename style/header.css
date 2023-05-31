@@ -126,6 +126,11 @@ header {
     cursor: pointer;
 }
 
+.tool-bar___login-box p {
+    display: block;
+    width: 65px;
+}
+
 .tool-language-box {
     color: rgb(254, 216, 255);
     border-left: 1px solid #fd78dc;
