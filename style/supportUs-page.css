@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    color: black;
 }
 .text-support2{
     width: 100%;

@@ -18,6 +18,15 @@ function darkMode() {
     wrapper.classList.toggle('dark-mode', !wasDarkMode)
 
     if (!wasDarkMode) {
+        document.querySelectorAll('.main_support').forEach(supportEl => {
+            supportEl.style = 'color: white';
+            document.querySelector('.a').style = 'color: white';
+        });
+
+        document.querySelectorAll('.convolutions').forEach(supportConvolutions => {
+            supportConvolutions.style = `box-shadow: 0 0 1px white`;
+        });
+
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
         // document.querySelector('.theme-btn').style = 'color: white'
 
@@ -33,8 +42,22 @@ function darkMode() {
         document.querySelector('.input_search').style = 'color: white';
 
         document.querySelector('.search_ickon').style = 'color: white';
+
+
     }
     else {
+        // support us page
+        
+        document.querySelectorAll('.main_support').forEach(supportEl => {
+            supportEl.style = 'color: black';
+            document.querySelector('.a').style = 'color: black';
+        });
+
+        document.querySelectorAll('.convolutions').forEach(supportConvolutions => {
+            supportConvolutions.style = `box-shadow: 0 0 1px black`;
+        });
+
+        
         document.querySelector('.theme-btn').textContent = 'dark_mode'
         // document.querySelector('.theme-btn').style = 'color: black'
 
@@ -49,7 +72,9 @@ function darkMode() {
 
         document.querySelector('.input_search').style = 'color: black';
 
-        document.querySelector('.search_ickon').style = 'color: black';      
+        document.querySelector('.search_ickon').style = 'color: black';   
+        
+
     }
 }
 
@@ -68,8 +93,24 @@ function onload() {
     });
 
     if (localStorage.getItem('darkMode') === 'true') {
+
+         // support us page
+        
+        document.querySelectorAll('.main_support').forEach(supportEl => {
+            supportEl.style = 'color: white';
+            document.querySelector('.a').style = 'color: white';
+        });
+
+        document.querySelectorAll('.convolutions').forEach(supportConvolutions => {
+            supportConvolutions.style = `box-shadow: 0 0 1px white`;
+        });
+        
+
         document.querySelector('.theme-btn').textContent = 'wb_sunny'
         // document.querySelector('.theme-btn').style = 'color: white'
+
+
+        // commands page
 
         document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
             mainCommandsHeader.style = 'color: white'   
@@ -80,12 +121,14 @@ function onload() {
 
         document.querySelector('.command_countenier1 h2').style = 'color: white';
         document.querySelector('.input_search').style = 'color: white';
-        document.querySelector('.search_ickon').style = 'color: white'; 
+        document.querySelector('.search_ickon').style = 'color: white';  
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode';
         // document.querySelector('.theme-btn').style = 'color: black'
 
+        // commands page
+        
         document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
             mainCommandsHeader.style = 'color: black';   
         })
@@ -97,6 +140,19 @@ function onload() {
         document.querySelector('.input_search').style = 'color: black';
 
         document.querySelector('.search_ickon').style = 'color: black';
+
+
+        // support us page
+        
+        document.querySelectorAll('.main_support').forEach(supportEl => {
+            supportEl.style = 'color: black';
+            document.querySelector('.a').style = 'color: black';
+        });
+
+        document.querySelectorAll('.convolutions').forEach(supportConvolutions => {
+            supportConvolutions.style = `box-shadow: 0 0 1px black`;
+        });
+        
     }  
 
     
