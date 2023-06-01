@@ -43,9 +43,13 @@ function darkMode() {
 
         document.querySelector('.search_ickon').style = 'color: white';
 
-
+        document.querySelector('.item-selection-container').style = 'background-color: #444444; box-shadow: 0 0 10px #ff00bf28'
+        document.querySelectorAll('.search_ingo_commands').forEach(searchIngoCommands => {
+            searchIngoCommands.style = 'background-color: #818181; color: rgb(196, 196, 196);'
+        })
     }
     else {
+        
         // support us page
         
         document.querySelectorAll('.main_support').forEach(supportEl => {
@@ -73,7 +77,12 @@ function darkMode() {
         document.querySelector('.input_search').style = 'color: black';
 
         document.querySelector('.search_ickon').style = 'color: black';   
+
+        document.querySelector('.item-selection-container').style = 'background-color: #dadada'
         
+        document.querySelectorAll('.search_ingo_commands').forEach(searchIngoCommands => {
+            searchIngoCommands.style = 'background-color: rgb(255, 255, 255); color: black;'
+        })
 
     }
 }
@@ -122,12 +131,20 @@ function onload() {
         document.querySelector('.command_countenier1 h2').style = 'color: white';
         document.querySelector('.input_search').style = 'color: white';
         document.querySelector('.search_ickon').style = 'color: white';  
+        document.querySelector('.item-selection-container').style = 'background-color: #444444; box-shadow: 0 0 10px #ff00bf28';
+        document.querySelectorAll('.search_ingo_commands').forEach(searchIngoCommands => {
+            searchIngoCommands.style = 'background-color: #818181; color: rgb(196, 196, 196);'
+        })
+
     }
     else {
         document.querySelector('.theme-btn').textContent = 'dark_mode';
+        
         // document.querySelector('.theme-btn').style = 'color: black'
 
         // commands page
+        document.querySelector('.item-selection-container').style = 'background-color: #dadada'
+
         
         document.querySelectorAll('.trigger').forEach(mainCommandsHeader => {
             mainCommandsHeader.style = 'color: black';   
@@ -140,6 +157,10 @@ function onload() {
         document.querySelector('.input_search').style = 'color: black';
 
         document.querySelector('.search_ickon').style = 'color: black';
+        document.querySelectorAll('.search_ingo_commands').forEach(searchIngoCommands => {
+            searchIngoCommands.style = 'background-color: rgb(255, 255, 255); color: black;'
+        })
+
 
 
         // support us page
