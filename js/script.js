@@ -57,4 +57,16 @@ $("#moreBtn").click(function() {
   }
 }
 
+document.querySelector('.package').addEventListener('click', () => {
+  document.querySelector('.package-body').style = 'display: block'
+})
+
+document.addEventListener('click', (e) => {
+  const hiddenPackageBody = e.composedPath().includes(document.querySelector('.package-body'));
+  if (!hiddenPackageBody && e.target != document.querySelector('.package')) {
+    document.querySelector('.package-body').style = 'display: none'
+  }
+
+})
+
 btnUp.addEventListener();
